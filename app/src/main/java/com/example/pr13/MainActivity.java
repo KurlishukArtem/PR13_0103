@@ -80,10 +80,5 @@ public class MainActivity extends AppCompatActivity {
             _LocationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 1000, 10, _LocationListener);
         }
     }
-    @Override
-    protected void onPause()
-    {
-        super.onPause();
-        _LocationManager.removeUpdates(_LocationListener);
-    }
+
 }
